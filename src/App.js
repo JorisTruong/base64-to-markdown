@@ -17,7 +17,7 @@ function App() {
   }
 
   const downloadTxtFile = () => {
-    const element = document.createElement("text");
+    const element = document.createElement("a");
     const file = new Blob([markdown],    
                 {type: 'text/plain;charset=utf-8'});
     element.href = URL.createObjectURL(file);
